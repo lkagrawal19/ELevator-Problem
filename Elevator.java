@@ -154,6 +154,8 @@ class Algo
     // Function to partition the the floors into sectors
     void createPartition(int nol,int nof, HashMap<Integer,Lift> lift)
     {
+      if(nol>0)
+      {
       final int quotient = nof/ nol;
       final int remainder = nof % nol;
       int [] results = new int[nol];
@@ -179,6 +181,7 @@ class Algo
           ArrayList<Integer> temp4=temp3.getStop();
           temp4.add(0);
         }
+      }
     }
     
  // It will create a HashMap to store the information of persons on every floor   
@@ -519,4 +522,4 @@ class Algo
                    
                 }     
     }          
-}
+}   
